@@ -31,12 +31,33 @@
 .header__container .header__content .header__menu .header__menuItem {
   color: #fff;
   margin-right: 30px;
-  font-family: 'inter-Regular';
+  font-family: "inter-Regular";
   padding-bottom: 5px;
   text-decoration: none;
 }
 
 .header__container .header__content .header__menu .header__selectedMenuItem {
   text-decoration: underline;
+}
+
+.pageTitle__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.pageTitle__container .pageTitle__content {
+  margin-top: 20px;
+}
+
+.pageTitle__container .pageTitle__content .pageTitle__title {
+  font-family: "inter-Regular";
+  font-weight: normal;
+  color: #202020;
 }
 /*# sourceMappingURL=style.css.map */
