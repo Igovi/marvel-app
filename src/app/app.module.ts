@@ -11,6 +11,7 @@ import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CharactersComponent } from './pages/characters/characters.component';
 import { ComicsComponent } from './pages/comics/comics.component';
+import { CreatorsComponent } from './pages/creators/creators.component';
 
 
 @NgModule({
@@ -18,6 +19,7 @@ import { ComicsComponent } from './pages/comics/comics.component';
     AppComponent,
     CharactersComponent,
     ComicsComponent,
+    CreatorsComponent,
   ],
   imports: [
     BrowserModule,

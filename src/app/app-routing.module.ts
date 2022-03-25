@@ -1,3 +1,4 @@
+import { CreatorsComponent } from './pages/creators/creators.component';
 import { ComicsComponent } from './pages/comics/comics.component';
 import { CharactersComponent } from './pages/characters/characters.component';
 import { NgModule } from '@angular/core';
@@ -13,6 +14,10 @@ const routes: Routes = [
     component: ComicsComponent
   },
   {
+    path: 'creators',
+    component: CreatorsComponent
+  },
+  {
     path: '',
     redirectTo: 'characters',
     pathMatch: 'full'
@@ -25,6 +30,11 @@ const routes: Routes = [
   {
     path: 'comics',
     redirectTo: 'comics',
+    pathMatch: 'full'
+  },
+  {
+    path: 'creators',
+    redirectTo: 'creators',
     pathMatch: 'full'
   },
 ];
