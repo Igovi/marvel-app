@@ -13,7 +13,8 @@ export class PaginationComponent implements OnInit {
   public firstButton:number = 1
   public maxPages: number = 0
   public offset:number = 0;
-  public pages:Array<number> = [1,2,3,4,5,6,7,8,9]
+  public pages:Array<number> = [1,2,3,4,5,6,7,8,9];
+  public initialPages:Array<number> = [1,2,3,4,5,6,7,8,9];
 
   constructor(
     private EventEmitterComunicationService: EventEmitterComunicationService,
@@ -43,6 +44,9 @@ export class PaginationComponent implements OnInit {
         for(var i=this.firstButton;i < this.firstButton + 9;i++){
           this.pages.push(i);
         }
+      }
+      else{
+        this.pages = this.initialPages;
       }
     }
     else{
