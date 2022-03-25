@@ -62,6 +62,7 @@
 
 .pagination__container{
     margin-top: 45px;
+    margin-bottom: 45px;
     .pagination__content{
         .pagination__list{
             @include flex($justify-content: center);
@@ -91,6 +92,23 @@
                     transition: 0.2s;
                 }
             }
+        }
+    }
+}
+
+.footer__container{
+    margin-top: 65px;
+    padding: 20px;
+    background: #202020;
+    .footer__content{
+        @include flex($flex-direction:column,$align-item:center);
+        .footer__text{
+            color: #fff;
+        }
+        .footer__img{
+            width: 40px;
+            height: 40px;
+
         }
     }
 }

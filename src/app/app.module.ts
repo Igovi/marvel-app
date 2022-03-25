@@ -1,3 +1,4 @@
+import { FooterModule } from './shared/components/footer/footer.module';
 import { PaginationModule } from './shared/components/pagination/pagination.module';
 import { CardModule } from './shared/components/card/card.module';
 import { PageTitleModule } from './shared/components/page-title/page-title.module';
@@ -8,11 +9,8 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { HeaderComponent } from './shared/components/header/header.component';
 import { CharactersComponent } from './pages/characters/characters.component';
-import { PageTitleComponent } from './shared/components/page-title/page-title.component';
-import { CardComponent } from './shared/components/card/card.component';
-import { PaginationComponent } from './shared/components/pagination/pagination.component';
+
 
 @NgModule({
   declarations: [
@@ -26,7 +24,8 @@ import { PaginationComponent } from './shared/components/pagination/pagination.c
     HeaderModule,
     PageTitleModule,
     CardModule,
-    PaginationModule
+    PaginationModule,
+    FooterModule
   ],
   providers: [],
   bootstrap: [AppComponent]
