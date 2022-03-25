@@ -1,0 +1,11 @@
+<div class="pagination__container">
+    <div class="pagination__content">
+        <ul class="pagination__list">
+                <li *ngFor="let item of pages; let i = index" class="pagination__listItem">
+                    <button [ngClass]="{'pagination__listItemButtonSelected': currentButton === item}"  (click)="click(item)" class="pagination__listItemButton">
+                        {{item}}
+                    </button>
+                </li>
+        </ul>
+    </div>
+</div>
