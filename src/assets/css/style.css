@@ -60,4 +60,32 @@
   font-weight: normal;
   color: #202020;
 }
+
+.card__container {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.card__container .card__content .card__block {
+  width: 155px;
+  height: 200px;
+}
+
+.card__container .card__content .card__block .card__img {
+  border: #202020 solid 2px;
+  width: 155px;
+  height: 160px;
+}
+
+.card__container .card__content .card__block .card__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-justify-content: center;
+  text-align: center;
+}
 /*# sourceMappingURL=style.css.map */

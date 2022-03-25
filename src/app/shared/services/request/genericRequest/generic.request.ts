@@ -16,9 +16,9 @@ export class GenericRequest<T> {
 
     ) {}
 
-    getGeneric(offset?:number,limit?:number): Observable<T[]> {
+    getGeneric(offset?:number,limit?:number): Observable<T> {
         const URL = this.getUrl(offset,limit);
-        return this.http.get<T[]>(URL);
+        return this.http.get<T>(URL);
     }
 
     getUrl(offset?:number,limit?:number) {

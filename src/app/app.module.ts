@@ -1,3 +1,4 @@
+import { CardModule } from './shared/components/card/card.module';
 import { PageTitleModule } from './shared/components/page-title/page-title.module';
 import { HeaderModule } from './shared/components/header/header.module';
 import { HttpClientModule } from '@angular/common/http';
@@ -9,6 +10,7 @@ import { AppComponent } from './app.component';
 import { HeaderComponent } from './shared/components/header/header.component';
 import { CharactersComponent } from './pages/characters/characters.component';
 import { PageTitleComponent } from './shared/components/page-title/page-title.component';
+import { CardComponent } from './shared/components/card/card.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +22,8 @@ import { PageTitleComponent } from './shared/components/page-title/page-title.co
     AppRoutingModule,
     HttpClientModule,
     HeaderModule,
-    PageTitleModule
+    PageTitleModule,
+    CardModule
   ],
   providers: [],
   bootstrap: [AppComponent]

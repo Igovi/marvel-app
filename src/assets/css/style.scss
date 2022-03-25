@@ -37,3 +37,26 @@
     }
   }
 }
+
+
+.card__container{
+    margin-left: 25px;
+    margin-right: 25px;
+    .card__content{
+        .card__block{
+            width: 155px;
+            height: 200px;
+            .card__img{
+                border: #202020 solid 2px;
+                width: 155px;
+                height: 160px;
+            }
+            .card__name{
+                @include flex($justify-content: center);
+                text-align: center;
+            }
+        }
+    }
+}
+
+
