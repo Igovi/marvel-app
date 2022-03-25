@@ -1,3 +1,4 @@
+import { PaginationModule } from './shared/components/pagination/pagination.module';
 import { CardModule } from './shared/components/card/card.module';
 import { PageTitleModule } from './shared/components/page-title/page-title.module';
 import { HeaderModule } from './shared/components/header/header.module';
@@ -11,6 +12,7 @@ import { HeaderComponent } from './shared/components/header/header.component';
 import { CharactersComponent } from './pages/characters/characters.component';
 import { PageTitleComponent } from './shared/components/page-title/page-title.component';
 import { CardComponent } from './shared/components/card/card.component';
+import { PaginationComponent } from './shared/components/pagination/pagination.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,8 @@ import { CardComponent } from './shared/components/card/card.component';
     HttpClientModule,
     HeaderModule,
     PageTitleModule,
-    CardModule
+    CardModule,
+    PaginationModule
   ],
   providers: [],
   bootstrap: [AppComponent]

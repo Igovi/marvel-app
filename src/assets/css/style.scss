@@ -46,6 +46,7 @@
         .card__block{
             width: 155px;
             height: 200px;
+            margin-bottom: 20px;
             .card__img{
                 border: #202020 solid 2px;
                 width: 155px;
@@ -59,4 +60,38 @@
     }
 }
 
+.pagination__container{
+    margin-top: 45px;
+    .pagination__content{
+        .pagination__list{
+            @include flex($justify-content: center);
+            list-style: none;
+            padding: 0;
+            .pagination__listItem{
+                margin-right: 10px;
+                .pagination__listItemButton {
+                    background: #202020;
+                    color: #fff;
+                    border-radius: 7px;
+                    font-family: "inter-Regular";
+                    font-size: 1.25rem;
+                    transition: 0.2s;
+
+                    &:hover{
+                        background: #fff;
+                        color: #202020;
+                    }
+                }
+                .pagination__listItemButtonSelected {
+                    background: #fff;
+                    color: #202020;
+                    border-radius: 7px;
+                    font-family: "inter-Regular";
+                    font-size: 1.25rem;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+}
 

@@ -69,6 +69,7 @@
 .card__container .card__content .card__block {
   width: 155px;
   height: 200px;
+  margin-bottom: 20px;
 }
 
 .card__container .card__content .card__block .card__img {
@@ -87,5 +88,51 @@
           justify-content: center;
   -webkit-justify-content: center;
   text-align: center;
+}
+
+.pagination__container {
+  margin-top: 45px;
+}
+
+.pagination__container .pagination__content .pagination__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination__container .pagination__content .pagination__list .pagination__listItem {
+  margin-right: 10px;
+}
+
+.pagination__container .pagination__content .pagination__list .pagination__listItem .pagination__listItemButton {
+  background: #202020;
+  color: #fff;
+  border-radius: 7px;
+  font-family: "inter-Regular";
+  font-size: 1.25rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.pagination__container .pagination__content .pagination__list .pagination__listItem .pagination__listItemButton:hover {
+  background: #fff;
+  color: #202020;
+}
+
+.pagination__container .pagination__content .pagination__list .pagination__listItem .pagination__listItemButtonSelected {
+  background: #fff;
+  color: #202020;
+  border-radius: 7px;
+  font-family: "inter-Regular";
+  font-size: 1.25rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 /*# sourceMappingURL=style.css.map */

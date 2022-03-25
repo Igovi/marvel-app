@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { EventEmitterComunicationService } from 'src/app/shared/services/component-comunication/event-emitter-comunication.service';
 import { CharacterProvider } from 'src/app/shared/services/request/providers/character.provider';
 
 @Component({
@@ -8,17 +9,23 @@ import { CharacterProvider } from 'src/app/shared/services/request/providers/cha
 })
 export class CharactersComponent implements OnInit {
 
-  private limit:number = 8;
+  private limit:number = 20;
 
-  private offset:number = 0; 
+  public offset:number = 0; 
+
+  public totalCharacters:number = 0;
 
   public characterList: Array<any> = [];
 
   public thumbnail:string = ''
 
-  constructor(private CharacterProvider: CharacterProvider,) { }
+  constructor(
+    private CharacterProvider: CharacterProvider,
+    private EventEmitterComunicationService:EventEmitterComunicationService
+    ) { }
 
   ngOnInit(): void {
+    this.initEmitSubscritions();
     this.getCharacters();
   }
 
@@ -26,9 +33,12 @@ export class CharactersComponent implements OnInit {
     this.CharacterProvider.getGeneric(this.offset,this.limit).subscribe(
       apiResult => {
         this.characterList = apiResult.data.results;
+        this.totalCharacters = apiResult.data.total;
+        this.EventEmitterComunicationService.maxPages.emit(Math.ceil(this.totalCharacters/this.limit));
         this.getThumbnail();
         console.log(apiResult);
-        console.log(this.characterList)
+        console.log(this.characterList);
+        console.log(this.totalCharacters);
       }, apiError => {
         console.error(apiError);
       }
@@ -39,6 +49,18 @@ export class CharactersComponent implements OnInit {
     this.characterList.forEach(character => {
       character.thumbnail.path = `${character.thumbnail.path}.${character.thumbnail.extension}`;
     })
+  }
+
+  initEmitSubscritions(){
+    this.EventEmitterComunicationService.offset.subscribe(
+      res =>{
+        this.offset = res;
+        this.getCharacters();
+      },
+      err => {
+        console.error(err)
+      }
+    )
   }
 
 }
