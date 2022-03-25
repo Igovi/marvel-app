@@ -90,6 +90,30 @@
   text-align: center;
 }
 
+.card__container .card__content .card_blockComics {
+  width: 155px;
+  height: 200px;
+  margin-bottom: 65px;
+}
+
+.card__container .card__content .card_blockComics .card__img {
+  border: #202020 solid 2px;
+  width: 155px;
+  height: 160px;
+}
+
+.card__container .card__content .card_blockComics .card__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-justify-content: center;
+  text-align: center;
+}
+
 .pagination__container {
   margin-top: 45px;
   margin-bottom: 45px;
