@@ -1,0 +1,11 @@
+<app-header></app-header>
+<app-page-title></app-page-title>
+
+
+<div class="comic__cards">
+    <app-card  *ngFor="let comic of comicsList" [thumbnail]="comic.thumbnail.path" [name]="comic.title"></app-card>
+</div>
+
+<app-pagination></app-pagination>
+
+<app-footer></app-footer>

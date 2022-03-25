@@ -57,6 +57,21 @@
                 text-align: center;
             }
         }
+        .card_blockComics{
+            width: 155px;
+            height: 200px;
+            margin-bottom: 65px;
+            .card__img{
+                border: #202020 solid 2px;
+                width: 155px;
+                height: 160px;
+            }
+            .card__name{
+                @include flex($justify-content: center);
+                text-align: center;
+            }
+            
+        }
     }
 }
 

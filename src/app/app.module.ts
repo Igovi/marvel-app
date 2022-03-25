@@ -10,12 +10,14 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { CharactersComponent } from './pages/characters/characters.component';
+import { ComicsComponent } from './pages/comics/comics.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
     CharactersComponent,
+    ComicsComponent,
   ],
   imports: [
     BrowserModule,
