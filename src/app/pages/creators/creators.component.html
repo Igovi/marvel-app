@@ -1,0 +1,11 @@
+<app-header></app-header>
+<app-page-title></app-page-title>
+
+
+<div class="creators__cards">
+    <app-card  *ngFor="let creator of creatorList" [thumbnail]="creator.thumbnail.path" [name]="creator.firstName"></app-card>
+</div>
+
+<app-pagination></app-pagination>
+
+<app-footer></app-footer>

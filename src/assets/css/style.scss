@@ -1,0 +1,130 @@
+@import "modules/_all.scss";
+
+.header__container {
+  padding: 20px;
+  background: #202020;
+  .header__content {
+    @include flex($align-item: center, $justify-content: space-between);
+    .header__img {
+      width: 150px;
+      height: 70px;
+      margin-left: 20px;
+    }
+    .header__menu {
+      margin-right: 20px;
+      .header__menuItem {
+        color: #fff;
+        margin-right: 30px;
+        font-family: "inter-Regular";
+        padding-bottom: 5px;
+        text-decoration: none;
+      }
+      .header__selectedMenuItem {
+        text-decoration: underline;
+      }
+    }
+  }
+}
+
+.pageTitle__container {
+    @include flex($justify-content: center);
+  .pageTitle__content {
+      margin-top: 20px;
+    .pageTitle__title {
+      font-family: "inter-Regular";
+      font-weight: normal;
+      color: #202020;
+    }
+  }
+}
+
+
+.card__container{
+    margin-left: 25px;
+    margin-right: 25px;
+    .card__content{
+        .card__block{
+            width: 155px;
+            height: 200px;
+            margin-bottom: 20px;
+            .card__img{
+                border: #202020 solid 2px;
+                width: 155px;
+                height: 160px;
+            }
+            .card__name{
+                @include flex($justify-content: center);
+                text-align: center;
+            }
+        }
+        .card_blockComics{
+            width: 155px;
+            height: 200px;
+            margin-bottom: 65px;
+            .card__img{
+                border: #202020 solid 2px;
+                width: 155px;
+                height: 160px;
+            }
+            .card__name{
+                @include flex($justify-content: center);
+                text-align: center;
+            }
+            
+        }
+    }
+}
+
+.pagination__container{
+    margin-top: 45px;
+    margin-bottom: 45px;
+    .pagination__content{
+        .pagination__list{
+            @include flex($justify-content: center);
+            list-style: none;
+            padding: 0;
+            .pagination__listItem{
+                margin-right: 10px;
+                .pagination__listItemButton {
+                    background: #202020;
+                    color: #fff;
+                    border-radius: 7px;
+                    font-family: "inter-Regular";
+                    font-size: 1.25rem;
+                    transition: 0.2s;
+
+                    &:hover{
+                        background: #fff;
+                        color: #202020;
+                    }
+                }
+                .pagination__listItemButtonSelected {
+                    background: #fff;
+                    color: #202020;
+                    border-radius: 7px;
+                    font-family: "inter-Regular";
+                    font-size: 1.25rem;
+                    transition: 0.2s;
+                }
+            }
+        }
+    }
+}
+
+.footer__container{
+    margin-top: 65px;
+    padding: 20px;
+    background: #202020;
+    .footer__content{
+        @include flex($flex-direction:column,$align-item:center);
+        .footer__text{
+            color: #fff;
+        }
+        .footer__img{
+            width: 40px;
+            height: 40px;
+
+        }
+    }
+}
+

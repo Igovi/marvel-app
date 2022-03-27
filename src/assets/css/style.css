@@ -1,0 +1,193 @@
+.header__container {
+  padding: 20px;
+  background: #202020;
+}
+
+.header__container .header__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-justify-content: space-between;
+}
+
+.header__container .header__content .header__img {
+  width: 150px;
+  height: 70px;
+  margin-left: 20px;
+}
+
+.header__container .header__content .header__menu {
+  margin-right: 20px;
+}
+
+.header__container .header__content .header__menu .header__menuItem {
+  color: #fff;
+  margin-right: 30px;
+  font-family: "inter-Regular";
+  padding-bottom: 5px;
+  text-decoration: none;
+}
+
+.header__container .header__content .header__menu .header__selectedMenuItem {
+  text-decoration: underline;
+}
+
+.pageTitle__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-justify-content: center;
+}
+
+.pageTitle__container .pageTitle__content {
+  margin-top: 20px;
+}
+
+.pageTitle__container .pageTitle__content .pageTitle__title {
+  font-family: "inter-Regular";
+  font-weight: normal;
+  color: #202020;
+}
+
+.card__container {
+  margin-left: 25px;
+  margin-right: 25px;
+}
+
+.card__container .card__content .card__block {
+  width: 155px;
+  height: 200px;
+  margin-bottom: 20px;
+}
+
+.card__container .card__content .card__block .card__img {
+  border: #202020 solid 2px;
+  width: 155px;
+  height: 160px;
+}
+
+.card__container .card__content .card__block .card__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-justify-content: center;
+  text-align: center;
+}
+
+.card__container .card__content .card_blockComics {
+  width: 155px;
+  height: 200px;
+  margin-bottom: 65px;
+}
+
+.card__container .card__content .card_blockComics .card__img {
+  border: #202020 solid 2px;
+  width: 155px;
+  height: 160px;
+}
+
+.card__container .card__content .card_blockComics .card__name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-justify-content: center;
+  text-align: center;
+}
+
+.pagination__container {
+  margin-top: 45px;
+  margin-bottom: 45px;
+}
+
+.pagination__container .pagination__content .pagination__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-justify-content: center;
+  list-style: none;
+  padding: 0;
+}
+
+.pagination__container .pagination__content .pagination__list .pagination__listItem {
+  margin-right: 10px;
+}
+
+.pagination__container .pagination__content .pagination__list .pagination__listItem .pagination__listItemButton {
+  background: #202020;
+  color: #fff;
+  border-radius: 7px;
+  font-family: "inter-Regular";
+  font-size: 1.25rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.pagination__container .pagination__content .pagination__list .pagination__listItem .pagination__listItemButton:hover {
+  background: #fff;
+  color: #202020;
+}
+
+.pagination__container .pagination__content .pagination__list .pagination__listItem .pagination__listItemButtonSelected {
+  background: #fff;
+  color: #202020;
+  border-radius: 7px;
+  font-family: "inter-Regular";
+  font-size: 1.25rem;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
+}
+
+.footer__container {
+  margin-top: 65px;
+  padding: 20px;
+  background: #202020;
+}
+
+.footer__container .footer__content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  -ms-flex-direction: column;
+}
+
+.footer__container .footer__content .footer__text {
+  color: #fff;
+}
+
+.footer__container .footer__content .footer__img {
+  width: 40px;
+  height: 40px;
+}
+/*# sourceMappingURL=style.css.map */
