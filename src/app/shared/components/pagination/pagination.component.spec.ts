@@ -8,9 +8,9 @@ describe('PaginationComponent', () => {
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ PaginationComponent ]
+      declarations: [PaginationComponent]
     })
-    .compileComponents();
+      .compileComponents();
   });
 
   beforeEach(() => {
@@ -21,5 +21,21 @@ describe('PaginationComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should call click function with page < 5', () => {
+    spyOn(component, 'click').and.callThrough();
+    component.click(2);
+    expect(component.click).toHaveBeenCalled();
+  });
+  it('should call click function with page > 5', () => {
+    spyOn(component, 'click').and.callThrough();
+    component.click(7);
+    expect(component.click).toHaveBeenCalled();
+  });
+  it('should call initEventSubscribe function with page > 5', () => {
+    spyOn(component, 'initEventSubscribe').and.callThrough();
+    component.initEventSubscribe();
+    expect(component.initEventSubscribe).toHaveBeenCalled();
   });
 });
