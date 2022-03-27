@@ -1,8 +1,11 @@
 <app-header></app-header>
 <app-page-title></app-page-title>
 
+<div *ngIf="loading" class="comics__loadingContainer">
+    <img class="comics__loadingGif" src="../../../assets/images/loading.gif">
+</div>
 
-<div class="comic__cards">
+<div *ngIf="!loading" class="comic__cards">
     <app-card  *ngFor="let comic of comicsList" [thumbnail]="comic.thumbnail.path" [name]="comic.title"></app-card>
 </div>
 

@@ -1,7 +1,11 @@
 <app-header></app-header>
 <app-page-title></app-page-title>
 
-<div class="characters__cards">
+<div *ngIf="loading" class="characters__loadingContainer">
+    <img class="characters__loadingGif" src="../../../assets/images/loading.gif">
+</div>
+
+<div *ngIf="!loading" class="characters__cards">
     <app-card  *ngFor="let character of characterList" [thumbnail]="character.thumbnail.path" [name]="character.name"></app-card>
 </div>
 

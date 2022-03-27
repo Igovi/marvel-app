@@ -1,3 +1,16 @@
+.creators__loadingContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.creators__loadingContainer .creators__loadingGif {
+  width: 350px;
+}
+
 .creators__cards {
   display: -webkit-box;
   display: -ms-flexbox;

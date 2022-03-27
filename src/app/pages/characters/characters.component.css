@@ -1,3 +1,16 @@
+.characters__loadingContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.characters__loadingContainer .characters__loadingGif {
+  width: 350px;
+}
+
 .characters__cards {
   display: -webkit-box;
   display: -ms-flexbox;
