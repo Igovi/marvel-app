@@ -1,5 +1,9 @@
 @import "modules/_all.scss";
 
+body{
+    margin-bottom: 200px;
+}
+
 .header__container {
   padding: 20px;
   background: #202020;
@@ -115,6 +119,9 @@
     margin-top: 65px;
     padding: 20px;
     background: #202020;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
     .footer__content{
         @include flex($flex-direction:column,$align-item:center);
         .footer__text{

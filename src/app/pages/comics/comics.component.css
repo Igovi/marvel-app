@@ -1,3 +1,16 @@
+.comics__loadingContainer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.comics__loadingContainer .comics__loadingGif {
+  width: 350px;
+}
+
 .comic__cards {
   display: -webkit-box;
   display: -ms-flexbox;

@@ -17,8 +17,9 @@ export class CreatorsComponent implements OnInit {
 
   public totalCreators: number = 0;
 
-  public thumbnail:string = ''
+  public thumbnail:string = '';
 
+  public loading:boolean = true;
 
   constructor(
     private EventEmitterComunicationService:EventEmitterComunicationService,
@@ -31,8 +32,10 @@ export class CreatorsComponent implements OnInit {
   }
 
   getCreators(): void {
+    this.loading = true;
     this.CreatorProvider.getGeneric(this.offset,this.limit).subscribe(
       apiResult => {
+        this.loading = false
         this.creatorList = apiResult.data.results;
         this.totalCreators = apiResult.data.total;
         this.EventEmitterComunicationService.maxPages.emit(Math.ceil(this.totalCreators/this.limit));

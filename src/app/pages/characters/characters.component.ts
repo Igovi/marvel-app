@@ -19,6 +19,8 @@ export class CharactersComponent implements OnInit {
 
   public thumbnail:string = ''
 
+  public loading:boolean = true;
+
   constructor(
     private CharacterProvider: CharacterProvider,
     private EventEmitterComunicationService:EventEmitterComunicationService
@@ -30,8 +32,10 @@ export class CharactersComponent implements OnInit {
   }
 
   getCharacters(): void {
+    this.loading = true;
     this.CharacterProvider.getGeneric(this.offset,this.limit).subscribe(
       apiResult => {
+        this.loading = false
         this.characterList = apiResult.data.results;
         this.totalCharacters = apiResult.data.total;
         this.EventEmitterComunicationService.maxPages.emit(Math.ceil(this.totalCharacters/this.limit));
@@ -40,6 +44,7 @@ export class CharactersComponent implements OnInit {
         console.log(this.characterList);
         console.log(this.totalCharacters);
       }, apiError => {
+        alert('Error trying to call Marvel characters api')
         console.error(apiError);
       }
     )

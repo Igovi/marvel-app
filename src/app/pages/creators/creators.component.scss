@@ -1,3 +1,11 @@
+.creators__loadingContainer{
+    display: flex;
+    justify-content: center;
+    .creators__loadingGif{
+        width: 350px;
+    }
+}
+
 .creators__cards{
     display: flex;
     justify-content: center;
