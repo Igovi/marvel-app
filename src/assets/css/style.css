@@ -1,3 +1,7 @@
+body {
+  margin-bottom: 200px;
+}
+
 .header__container {
   padding: 20px;
   background: #202020;
@@ -165,6 +169,9 @@
   margin-top: 65px;
   padding: 20px;
   background: #202020;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
 }
 
 .footer__container .footer__content {
