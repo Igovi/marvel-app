@@ -18,7 +18,10 @@ export class ComicsComponent implements OnInit {
 
   public totalComics: number = 0;
 
-  public thumbnail:string = ''
+  public thumbnail:string = '';
+
+  public loading:boolean = true;
+
   constructor(
     private EventEmitterComunicationService:EventEmitterComunicationService,
     public ComicProvider:ComicProvider
@@ -31,8 +34,10 @@ export class ComicsComponent implements OnInit {
 
 
   getComics(): void {
+    this.loading = true;
     this.ComicProvider.getGeneric(this.offset,this.limit).subscribe(
       apiResult => {
+        this.loading = false
         this.comicsList = apiResult.data.results;
         this.totalComics = apiResult.data.total;
         this.EventEmitterComunicationService.maxPages.emit(Math.ceil(this.totalComics/this.limit));

@@ -1,3 +1,11 @@
+.comics__loadingContainer{
+    display: flex;
+    justify-content: center;
+    .comics__loadingGif{
+        width: 350px;
+    }
+}
+
 .comic__cards{
     display: flex;
     justify-content: center;
